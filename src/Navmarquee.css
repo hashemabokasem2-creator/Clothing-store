@@ -1,0 +1,30 @@
+.marquee-container {
+  width: 100%;
+  white-space: nowrap;
+  user-select: none;
+  background: linear-gradient(90deg, #e52e71 0%, #ff8a00 100%);
+}
+
+.marquee-wrapper {
+  width: 97%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
