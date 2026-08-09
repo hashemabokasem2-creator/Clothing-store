@@ -1,13 +1,20 @@
-.navbar-expand-lg .navbar-toggler.show-on-large {
-  display: block !important;
-}
-
-@media (max-width: 991px) {
+@media (min-width: 1200px) {
   .show-on-large {
+    display: block !important;
+  }
+  .show-on-small {
     display: none !important;
   }
 }
 
+@media (max-width: 1199px) {
+  .show-on-large {
+    display: none !important;
+  }
+  .show-on-small {
+    display: block !important;
+  }
+}
 .arrow-icon {
   transition: transform 0.35s ease-in-out;
 }
@@ -62,9 +69,87 @@
 
 .nav-link-custom {
   color: #212529 !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .nav-link-custom:hover {
   color: #e52e71 !important;
+}
+
+.custom-offcanvas {
+  width: 600px !important;
+  border-left: 3px solid #e52e71 !important;
+}
+
+.custom-prev-btn:hover svg,
+.custom-next-btn:hover svg {
+  fill: #e52e71 !important;
+  color: #e52e71 !important;
+  transition:
+    color 0.2s ease,
+    fill 0.2s ease;
+}
+
+.custom-close-btn {
+  color: #000000 !important;
+  line-height: 1 !important;
+  transition: color 0.3s ease !important;
+}
+
+.custom-close-btn:hover {
+  color: #e52e71 !important;
+}
+
+.product-img {
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.08);
+}
+
+.product-actions {
+  opacity: 0;
+  transform: translate(-50%, -40%);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  pointer-events: none;
+}
+
+.product-card:hover .product-actions {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+}
+
+.action-btn {
+  width: 38px;
+  height: 38px;
+  background-color: transparent;
+  border-color: #e52e71 !important;
+  color: #e52e71;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #e52e71;
+  color: #ffffff;
+}
+
+.social-icon-btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #7e7979 !important;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.social-icon-btn:hover {
+  background-color: #e52e71;
+  border: 1px solid #e52e71 !important;
+  color: #ffffff;
 }

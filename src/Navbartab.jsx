@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import "./Navbartab.css";
-import { Navbar, Container, Form, InputGroup, Nav } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Form,
+  InputGroup,
+  Nav,
+  Offcanvas,
+} from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import {
   BsSearch,
@@ -8,12 +15,28 @@ import {
   BsHeart,
   BsBag,
   BsChevronDown,
+  BsX,
+  BsEye,
+  BsFacebook,
+  BsTwitterX,
+  BsInstagram,
+  BsYoutube,
 } from "react-icons/bs";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import { FaChevronUp, FaChevronDown } from "react-icons/fa";
+import "swiper/css";
+import "swiper/css/navigation";
+import imageone from "./assets/logo.svg";
+import imagetwo from "./assets/product-img-2.jpg";
+import imagethree from "./assets/product-img-1.jpg";
 
 function Navbartab() {
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
 
   const [selectedCategory, setSelectedCategory] = useState("Select Category");
+
+  const [showLargeMenu, setShowLargeMenu] = useState(false);
 
   const handleSelectCategory = (categoryName) => {
     setSelectedCategory(categoryName);
@@ -31,16 +54,10 @@ function Navbartab() {
             to="/"
             className="d-flex align-items-center gap-2 m-0"
           >
-            <span
-              className="bg-danger text-white fw-bold rounded-circle d-flex align-items-center justify-content-center"
-              style={{ width: "35px", height: "35px" }}
-            >
-              G
-            </span>
-            <span className="fw-bold fs-4 text-dark">Glamics</span>
+            <img src={imageone} alt="Logo" />
           </Navbar.Brand>
           <div
-            className="search-bar-wrapper my-2 my-lg-0"
+            className="search-bar-wrapper d-none d-lg-block my-2 my-lg-0"
             style={{ maxWidth: "500px", width: "100%" }}
           >
             <InputGroup className="border rounded-pill bg-light p-1 position-relative">
@@ -152,14 +169,287 @@ function Navbartab() {
               <BsBag style={{ cursor: "pointer" }} />
             </NavLink>
           </div>
-          <div className="d-none d-lg-block ms-3">
+          <div className="ms-3">
             <Navbar.Toggle
-              aria-controls="basic-navbar-nav"
+              aria-controls="large-screen-nav"
               className="border-0 p-0 shadow-none fs-6 show-on-large"
+              onClick={() => setShowLargeMenu(true)}
+            />
+
+            <Navbar.Toggle
+              aria-controls="small-screen-nav"
+              className="border-0 p-0 shadow-none fs-6 show-on-small"
+              onClick={() => {}}
             />
           </div>
         </Container>
       </Navbar>
+      <Offcanvas
+        show={showLargeMenu}
+        onHide={() => setShowLargeMenu(false)}
+        placement="end"
+        className="custom-offcanvas"
+      >
+        <Offcanvas.Header className="px-4 pt-4 pb-3 border-bottom d-flex align-items-center justify-content-between">
+          <Offcanvas.Title>
+            <img src={imageone} alt="Logo" style={{ maxHeight: "30px" }} />
+          </Offcanvas.Title>
+          <button
+            type="button"
+            className="btn p-0 border-0 shadow-none custom-close-btn"
+            onClick={() => setShowLargeMenu(false)}
+            aria-label="Close"
+          >
+            <BsX size={42} />
+          </button>
+        </Offcanvas.Header>
+
+        <Offcanvas.Body className="p-4">
+          <h5 className="fw-bold mb-3 text-dark">About glamer</h5>
+          <p className="lh-base" style={{ fontSize: "0.9rem" }}>
+            Phasellus eget fermentum mauris. Suspendisse nec dignissim nulla.
+            Integer non quam commodo, scelerisque felis id, eleifend turpis.
+            Phasellus in nulla quis erat tempor tristique eget vel purus. Nulla
+            pharetra pharetra pharetra. Praesent varius eget justo ut lacinia.
+            Phasellus pharetra, velit viverra lacinia consequat, ipsum odio
+            mollis dolor, nec facilisis arcu arcu ultricies sapien. Quisque ut
+            dapibus nunc. Vivamus sit amet efficitur velit. Phasellus eget
+            fermentum mauris. Suspendisse nec dignissim nulla. Integer non quam
+            commodo, scelerisque felis id, eleifend turpis. Phasellus in nulla
+            quis erat tempor tristique eget vel purus. Nulla pharetra pharetra
+            pharetra. Praesent varius eget justo ut lacinia. Phasellus pharetra
+            velit.
+          </p>
+          <div className="position-relative mt-4 pe-4">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              spaceBetween={15}
+              slidesPerView={2}
+              loop={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              navigation={{
+                prevEl: ".custom-prev-btn",
+                nextEl: ".custom-next-btn",
+              }}
+            >
+              <SwiperSlide>
+                <div className="p-3 border border rounded-4 text-center bg-light">
+                  <div className="product-card p-3 rounded-4 bg-white position-relative border border-light">
+                    <div className="d-flex justify-content-between align-items-center mb-3">
+                      <span className="fw-bold fs-5 text-dark">$99.00</span>
+                      <span className="badge bg-dark rounded-pill px-3 py-2 fw-normal">
+                        25% Off
+                      </span>
+                    </div>
+                    <div className="product-img-wrapper position-relative overflow-hidden rounded-3 mb-3">
+                      <img
+                        src={imagetwo}
+                        alt="Orange Airsuit"
+                        className="w-100 h-auto product-img d-block"
+                      />
+                      <div className="product-actions position-absolute top-50 start-50 translate-middle d-flex gap-2">
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsBag size={16} />
+                        </button>
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsEye size={16} />
+                        </button>
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsHeart size={16} />
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="text-start">
+                      <h6 className="fw-bold text-dark mb-1">Orange Airsuit</h6>
+                      <small
+                        className="text-pink fw-semibold text-uppercase"
+                        style={{ color: "#e52e71", fontSize: "0.75rem" }}
+                      >
+                        FASHION BAG
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="p-3 border border rounded-4 text-center bg-light">
+                  <div className="product-card p-3 rounded-4 bg-white position-relative border border-light">
+                    <div className="d-flex justify-content-between align-items-center mb-3">
+                      <span className="fw-bold fs-5 text-dark">$99.00</span>
+                      <span className="badge bg-dark rounded-pill px-3 py-2 fw-normal">
+                        25% Off
+                      </span>
+                    </div>
+                    <div className="product-img-wrapper position-relative overflow-hidden rounded-3 mb-3">
+                      <img
+                        src={imagetwo}
+                        alt="Orange Airsuit"
+                        className="w-100 h-auto product-img d-block"
+                      />
+                      <div className="product-actions position-absolute top-50 start-50 translate-middle d-flex gap-2">
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsBag size={16} />
+                        </button>
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsEye size={16} />
+                        </button>
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsHeart size={16} />
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="text-start">
+                      <h6 className="fw-bold text-dark mb-1">Orange Airsuit</h6>
+                      <small
+                        className="text-pink fw-semibold text-uppercase"
+                        style={{ color: "#e52e71", fontSize: "0.75rem" }}
+                      >
+                        FASHION BAG
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="p-3 border border rounded-4 text-center bg-light">
+                  <div className="product-card p-3 rounded-4 bg-white position-relative border border-light">
+                    <div className="d-flex justify-content-between align-items-center mb-3">
+                      <span className="fw-bold fs-5 text-dark">$99.00</span>
+                      <span className="badge bg-dark rounded-pill px-3 py-2 fw-normal">
+                        25% Off
+                      </span>
+                    </div>
+                    <div className="product-img-wrapper position-relative overflow-hidden rounded-3 mb-3">
+                      <img
+                        src={imagethree}
+                        alt="Orange Airsuit"
+                        className="w-100 h-auto product-img d-block"
+                      />
+                      <div className="product-actions position-absolute top-50 start-50 translate-middle d-flex gap-2">
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsBag size={16} />
+                        </button>
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsEye size={16} />
+                        </button>
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsHeart size={16} />
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="text-start">
+                      <h6 className="fw-bold text-dark mb-1">Orange Airsuit</h6>
+                      <small
+                        className="text-pink fw-semibold text-uppercase"
+                        style={{ color: "#e52e71", fontSize: "0.75rem" }}
+                      >
+                        FASHION BAG
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="p-3 border border rounded-4 text-center bg-light">
+                  <div className="product-card p-3 rounded-4 bg-white position-relative border border-light">
+                    <div className="d-flex justify-content-between align-items-center mb-3">
+                      <span className="fw-bold fs-5 text-dark">$99.00</span>
+                      <span className="badge bg-dark rounded-pill px-3 py-2 fw-normal">
+                        25% Off
+                      </span>
+                    </div>
+                    <div className="product-img-wrapper position-relative overflow-hidden rounded-3 mb-3">
+                      <img
+                        src={imagetwo}
+                        alt="Orange Airsuit"
+                        className="w-100 h-auto product-img d-block"
+                      />
+                      <div className="product-actions position-absolute top-50 start-50 translate-middle d-flex gap-2">
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsBag size={16} />
+                        </button>
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsEye size={16} />
+                        </button>
+                        <button className="action-btn d-flex align-items-center justify-content-center rounded-circle border p-0">
+                          <BsHeart size={16} />
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="text-start">
+                      <h6 className="fw-bold text-dark mb-1">Orange Airsuit</h6>
+                      <small
+                        className="text-pink fw-semibold text-uppercase"
+                        style={{ color: "#e52e71", fontSize: "0.75rem" }}
+                      >
+                        FASHION BAG
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+            <div className="d-flex flex-column align-items-center gap-2 position-absolute end-0 top-50 translate-middle-y z-3">
+              <button className="btn btn-sm p-0 border-0 custom-prev-btn shadow-none">
+                <FaChevronUp size={14} className="text-dark" />
+              </button>
+              <button className="btn btn-sm p-0 border-0 custom-next-btn shadow-none">
+                <FaChevronDown size={14} className="text-dark" />
+              </button>
+            </div>
+          </div>
+          <p className="lh-base mt-5" style={{ fontSize: "0.9rem" }}>
+            Phasellus eget fermentum mauris. Suspendisse nec dignissim nulla.
+            Integer non quam commodo, scelerisque felis id, eleifend turpis.
+            Phasellus in nulla quis erat tempor tristique eget vel purus. Nulla
+            pharetra pharetra pharetra. Praesent varius eget justo ut lacinia.
+            Phasellus pharetra, velit viverra lacinia consequat, ipsum odio
+            mollis dolor, nec facilisis arcu arcu ultricies sapien. Quisque ut
+            dapibus nunc. Vivamus sit amet efficitur velit. Phasellus eget
+            fermentum mauris. Suspendisse nec dignissim nulla. Integer non quam
+            commodo, scelerisque felis id, eleifend turpis. Phasellus in nulla
+            quis erat tempor tristique eget vel purus. Nulla pharetra pharetra
+            pharetra. Praesent varius eget justo ut lacinia. Phasellus pharetra
+            velit.
+          </p>
+          <div className="mt-4 pt-3 border-top">
+            <h6 className="fw-bold text-dark mt-4 fs-4 mb-3">Follow us</h6>
+            <div className="d-flex align-items-center gap-2">
+              <a
+                href="#"
+                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+              >
+                <BsFacebook size={16} />
+              </a>
+              <a
+                href="#"
+                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+              >
+                <BsTwitterX size={16} />
+              </a>
+              <a
+                href="#"
+                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+              >
+                <BsInstagram size={16} />
+              </a>
+              <a
+                href="#"
+                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+              >
+                <BsYoutube size={16} />
+              </a>
+            </div>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
     </>
   );
 }
