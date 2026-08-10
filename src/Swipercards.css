@@ -1,0 +1,84 @@
+.banner-slider-container {
+  background-color: #eee9e5;
+}
+
+.banner-swiper {
+  height: 600px;
+}
+
+.slide-content {
+  max-width: 50%;
+}
+
+.subtitle {
+  color: #e52e71;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.main-title {
+  color: #111111;
+  line-height: 1.25;
+}
+
+.price-tag {
+  color: #302d2d;
+  font-size: 15px;
+}
+
+.price-tag span {
+  color: #e52e71;
+  font-size: 22px;
+}
+
+.shop-btn {
+  padding: 10px 24px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.shop-btn:hover {
+  background-color: #e52e71;
+  border-color: #e52e71;
+  color: #ffffff;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+.custom-nav-container {
+  right: 16px;
+}
+
+.nav-btn {
+  width: 26px;
+  height: 26px;
+  color: #222222;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-btn:hover {
+  color: #e52e71;
+}
+
+.secondary-slider-container {
+  height: 600px;
+}
+
+.secondary-swiper {
+  width: 100%;
+}
+
+.card-image-wrapper img {
+  display: block;
+}
