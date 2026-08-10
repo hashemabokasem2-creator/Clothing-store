@@ -1,0 +1,106 @@
+.shop-btn {
+  padding: 10px 24px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.shop-btn:hover {
+  background-color: #e52e71;
+  border-color: #e52e71;
+  color: #ffffff;
+}
+
+.promo-card .card-overlay {
+  background: linear-gradient(
+    to top,
+    #e52e71 0%,
+    rgba(229, 46, 113, 0.6) 40%,
+    transparent 85%
+  );
+}
+
+.promo-title {
+  font-size: 1.5rem;
+}
+
+.promo-btn {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  border-radius: 50rem;
+  gap: 8px;
+}
+
+.promo-btn .btn-icon {
+  color: #ffffff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.promo-btn:hover {
+  background-color: #ffffff;
+  color: #e52e71;
+}
+
+.promo-btn:hover .btn-icon {
+  color: #e52e71;
+}
+
+@media (max-width: 991.98px) {
+  .promo-title {
+    font-size: 1.25rem;
+  }
+
+  .promo-btn {
+    font-size: 0.85rem;
+    padding: 6px 16px;
+    gap: 6px;
+  }
+
+  .promo-btn .btn-icon {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .promo-title {
+    font-size: 1.1rem;
+  }
+
+  .promo-btn {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+    gap: 4px;
+  }
+
+  .promo-btn .btn-icon {
+    font-size: 0.8rem;
+  }
+}
+
+.custom-swiper-nav {
+  user-select: none;
+}
+
+.custom-swiper-nav .nav-btn {
+  font-size: 18px;
+  line-height: 1;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.custom-swiper-nav .nav-btn:hover {
+  color: #e52e71 !important;
+  transform: scale(1.15);
+}

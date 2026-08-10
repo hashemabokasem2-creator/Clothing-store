@@ -2,6 +2,7 @@ import React from "react";
 import Navmarquee from "./Navmarquee.jsx";
 import Navbartab from "./Navbartab.jsx";
 import Swipercards from "./Swipercards.jsx";
+import Shopping from "./Shopping.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navmarquee />
       <Navbartab />
       <Swipercards />
+      <Shopping />
     </>
   );
 }
