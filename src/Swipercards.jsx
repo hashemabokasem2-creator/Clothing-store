@@ -15,7 +15,7 @@ import imagesix from "./assets/banner-slide-6.jpg";
 function Swipercards() {
   return (
     <>
-      <section className="pe-0 ps-lg-5 pt-lg-5 pb-lg-5 m-0 w-100">
+      <section className="pe-0 pt-4 ps-lg-5 pt-lg-5 pb-lg-5 m-0 w-100">
         <div className="row g-0 gx-4 m-0">
           <div
             className="col-12 col-lg-12 col-xl-7"
@@ -61,7 +61,12 @@ function Swipercards() {
                       <img
                         src={imageone}
                         alt="Summer Style"
-                        className="w-100 h-100 object-fit-cover"
+                        className="w-100 h-100 object-fit-cover d-none d-md-block"
+                      />
+                      <img
+                        src={imagefour}
+                        alt="Product 1"
+                        className="w-100 h-100 object-fit-cover d-block d-md-none"
                       />
                     </div>
                   </div>
@@ -90,7 +95,12 @@ function Swipercards() {
                       <img
                         src={imagetwo}
                         alt="Summer Style"
-                        className="w-100 h-100 object-fit-cover"
+                        className="w-100 h-100 object-fit-cover d-none d-md-block"
+                      />
+                      <img
+                        src={imagefive}
+                        alt="Product 2"
+                        className="w-100 h-100 object-fit-cover d-block d-md-none"
                       />
                     </div>
                   </div>
@@ -119,7 +129,12 @@ function Swipercards() {
                       <img
                         src={imagethree}
                         alt="Summer Style"
-                        className="w-100 h-100 object-fit-cover"
+                        className="w-100 h-100 object-fit-cover d-none d-md-block"
+                      />
+                      <img
+                        src={imagesix}
+                        alt="Product 3"
+                        className="w-100 h-100 object-fit-cover d-block d-md-none"
                       />
                     </div>
                   </div>
@@ -142,7 +157,10 @@ function Swipercards() {
               </div>
             </div>
           </div>
-          <div className="col-12 d-none d-xl-block" style={{ flex: "0 0 40%", maxWidth: "40%" }}>
+          <div
+            className="col-12 d-none d-xl-block"
+            style={{ flex: "0 0 40%", maxWidth: "40%" }}
+          >
             <div className="secondary-slider-container position-relative overflow-hidden rounded-4 h-100">
               <Swiper
                 modules={[Autoplay]}

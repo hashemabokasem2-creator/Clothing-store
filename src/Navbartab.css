@@ -153,3 +153,7 @@
   border: 1px solid #e52e71 !important;
   color: #ffffff;
 }
+
+.offcanvasborder {
+  border-left: 3px solid #e52e71 !important;
+}

@@ -82,3 +82,9 @@
 .card-image-wrapper img {
   display: block;
 }
+
+@media (max-width: 767px) {
+  .slide-content {
+  max-width: 100%;
+}
+}

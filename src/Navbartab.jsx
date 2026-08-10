@@ -38,6 +38,11 @@ function Navbartab() {
 
   const [showLargeMenu, setShowLargeMenu] = useState(false);
 
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const handleSelectCategory = (categoryName) => {
     setSelectedCategory(categoryName);
     setIsCategoryOpen(false);
@@ -179,7 +184,9 @@ function Navbartab() {
             <Navbar.Toggle
               aria-controls="small-screen-nav"
               className="border-0 p-0 shadow-none fs-6 show-on-small"
-              onClick={() => {}}
+              onClick={() => {
+                setShow(true);
+              }}
             />
           </div>
         </Container>
@@ -420,6 +427,119 @@ function Navbartab() {
             velit.
           </p>
           <div className="mt-4 pt-3 border-top">
+            <h6 className="fw-bold text-dark mt-4 fs-4 mb-3">Follow us</h6>
+            <div className="d-flex align-items-center gap-2">
+              <a
+                href="#"
+                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+              >
+                <BsFacebook size={16} />
+              </a>
+              <a
+                href="#"
+                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+              >
+                <BsTwitterX size={16} />
+              </a>
+              <a
+                href="#"
+                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+              >
+                <BsInstagram size={16} />
+              </a>
+              <a
+                href="#"
+                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+              >
+                <BsYoutube size={16} />
+              </a>
+            </div>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+      <Offcanvas
+        show={show}
+        onHide={() => setShow(false)}
+        placement="end"
+        className="offcanvasborder"
+      >
+        <Offcanvas.Header className="px-4 pt-4 pb-3 border-bottom d-flex align-items-center justify-content-between">
+          <Offcanvas.Title>
+            <img src={imageone} alt="Logo" style={{ maxHeight: "30px" }} />
+          </Offcanvas.Title>
+          <button
+            type="button"
+            className="btn p-0 border-0 shadow-none custom-close-btn"
+            onClick={() => setShow(false)}
+            aria-label="Close"
+          >
+            <BsX size={42} />
+          </button>
+        </Offcanvas.Header>
+        <Offcanvas.Body className="d-flex flex-column p-4">
+          <div className="menu-list-wrapper">
+            <Nav className="flex-column w-100">
+              <Nav.Link
+                as={NavLink}
+                to="/"
+                className="nav-link-custom border-bottom py-3 px-0 fw-medium text-dark text-uppercase"
+              >
+                HOME
+              </Nav.Link>
+
+              <Nav.Link
+                as={NavLink}
+                to="/shop"
+                className="nav-link-custom border-bottom py-3 px-0 fw-medium text-dark text-uppercase"
+              >
+                SHOP
+              </Nav.Link>
+
+              <Nav.Link
+                as={NavLink}
+                to="/women"
+                className="nav-link-custom border-bottom py-3 px-0 fw-medium text-dark text-uppercase"
+              >
+                WOMEN
+              </Nav.Link>
+
+              <Nav.Link
+                as={NavLink}
+                to="/mens"
+                className="nav-link-custom border-bottom py-3 px-0 fw-medium text-dark text-uppercase"
+              >
+                MEN'S
+              </Nav.Link>
+
+              <Nav.Link
+                as={NavLink}
+                to="/kids"
+                className="nav-link-custom border-bottom py-3 px-0 fw-medium text-dark text-uppercase"
+              >
+                KIDS
+              </Nav.Link>
+
+              <Nav.Link
+                as={NavLink}
+                to="/blog"
+                className="nav-link-custom border-bottom py-3 px-0 fw-medium text-dark text-uppercase"
+              >
+                BLOG
+              </Nav.Link>
+
+              <div className="d-flex align-items-center justify-content-between border-bottom py-3">
+                <Nav.Link
+                  as={NavLink}
+                  to="/pages"
+                  className="nav-link-custom p-0 fw-medium text-dark text-uppercase"
+                >
+                  PAGES
+                </Nav.Link>
+                <span className="text-danger fs-5 cursor-pointer">+</span>
+              </div>
+            </Nav>
+          </div>
+          <div className="mt-auto pt-2 border-top border-2">
             <h6 className="fw-bold text-dark mt-4 fs-4 mb-3">Follow us</h6>
             <div className="d-flex align-items-center gap-2">
               <a
