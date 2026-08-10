@@ -4,13 +4,26 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { BsArrowUpRight, BsChevronUp, BsChevronDown } from "react-icons/bs";
+import {
+  BsArrowUpRight,
+  BsChevronUp,
+  BsChevronDown,
+  BsChevronRight,
+} from "react-icons/bs";
 import imageone from "./assets/banner-slide-1.jpg";
 import imagetwo from "./assets/banner-slide-2.jpg";
 import imagethree from "./assets/banner-slide-3.jpg";
 import imagefour from "./assets/banner-slide-4.jpg";
 import imagefive from "./assets/banner-slide-5.jpg";
 import imagesix from "./assets/banner-slide-6.jpg";
+import menImg from "./assets/category-1.jpg";
+import kidsImg from "./assets/category-2.jpg";
+import pantsImg from "./assets/category-3.jpg";
+import menImg2 from "./assets/category-4.jpg";
+import womenImg from "./assets/category-5.jpg";
+import jeansImg from "./assets/category-6.jpg";
+import sweaterImg from "./assets/category-7.jpg";
+import shoeImg from "./assets/category-8.jpg";
 
 function Swipercards() {
   return (
@@ -204,6 +217,146 @@ function Swipercards() {
                   </div>
                 </SwiperSlide>
               </Swiper>
+            </div>
+          </div>
+        </div>
+        <div className="container mt-4 mt-lg-5">
+          <div className="row g-4">
+            <div className="col-12 col-md-6 col-lg-3">
+              <div className="category-card d-flex align-items-center justify-content-between p-3 rounded-4 border bg-white">
+                <div className="d-flex align-items-center gap-3">
+                  <img
+                    src={menImg}
+                    alt="Men"
+                    className="rounded-circle object-fit-cover"
+                    width="48"
+                    height="48"
+                  />
+                  <span className="category-title fw-bold">Men</span>
+                </div>
+                <div className="icon-box rounded-circle d-flex align-items-center justify-content-center">
+                  <BsChevronRight className="arrow-icon" />
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-3">
+              <div className="category-card d-flex align-items-center justify-content-between p-3 rounded-4 border bg-white">
+                <div className="d-flex align-items-center gap-3">
+                  <img
+                    src={kidsImg}
+                    alt="Kids"
+                    className="rounded-circle object-fit-cover"
+                    width="48"
+                    height="48"
+                  />
+                  <span className="category-title fw-bold">Kids</span>
+                </div>
+                <div className="icon-box rounded-circle d-flex align-items-center justify-content-center">
+                  <BsChevronRight className="arrow-icon" />
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-3">
+              <div className="category-card d-flex align-items-center justify-content-between p-3 rounded-4 border bg-white">
+                <div className="d-flex align-items-center gap-3">
+                  <img
+                    src={pantsImg}
+                    alt="Pants"
+                    className="rounded-circle object-fit-cover"
+                    width="48"
+                    height="48"
+                  />
+                  <span className="category-title fw-bold">Pants</span>
+                </div>
+                <div className="icon-box rounded-circle d-flex align-items-center justify-content-center">
+                  <BsChevronRight className="arrow-icon" />
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-3">
+              <div className="category-card d-flex align-items-center justify-content-between p-3 rounded-4 border bg-white">
+                <div className="d-flex align-items-center gap-3">
+                  <img
+                    src={menImg2}
+                    alt="Men"
+                    className="rounded-circle object-fit-cover"
+                    width="48"
+                    height="48"
+                  />
+                  <span className="category-title fw-bold">Men</span>
+                </div>
+                <div className="icon-box rounded-circle d-flex align-items-center justify-content-center">
+                  <BsChevronRight className="arrow-icon" />
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-3">
+              <div className="category-card d-flex align-items-center justify-content-between p-3 rounded-4 border bg-white">
+                <div className="d-flex align-items-center gap-3">
+                  <img
+                    src={womenImg}
+                    alt="Women"
+                    className="rounded-circle object-fit-cover"
+                    width="48"
+                    height="48"
+                  />
+                  <span className="category-title fw-bold">Women</span>
+                </div>
+                <div className="icon-box rounded-circle d-flex align-items-center justify-content-center">
+                  <BsChevronRight className="arrow-icon" />
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-3">
+              <div className="category-card d-flex align-items-center justify-content-between p-3 rounded-4 border bg-white">
+                <div className="d-flex align-items-center gap-3">
+                  <img
+                    src={jeansImg}
+                    alt="Jeans"
+                    className="rounded-circle object-fit-cover"
+                    width="48"
+                    height="48"
+                  />
+                  <span className="category-title fw-bold">Jeans</span>
+                </div>
+                <div className="icon-box rounded-circle d-flex align-items-center justify-content-center">
+                  <BsChevronRight className="arrow-icon" />
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-3">
+              <div className="category-card d-flex align-items-center justify-content-between p-3 rounded-4 border bg-white">
+                <div className="d-flex align-items-center gap-3">
+                  <img
+                    src={sweaterImg}
+                    alt="Sweater"
+                    className="rounded-circle object-fit-cover"
+                    width="48"
+                    height="48"
+                  />
+                  <span className="category-title fw-bold">Sweater</span>
+                </div>
+                <div className="icon-box rounded-circle d-flex align-items-center justify-content-center">
+                  <BsChevronRight className="arrow-icon" />
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-3">
+              <div className="category-card d-flex align-items-center justify-content-between p-3 rounded-4 border bg-white">
+                <div className="d-flex align-items-center gap-3">
+                  <img
+                    src={shoeImg}
+                    alt="Shoe"
+                    className="rounded-circle object-fit-cover"
+                    width="48"
+                    height="48"
+                  />
+                  <span className="category-title fw-bold">Shoe</span>
+                </div>
+                <div className="icon-box rounded-circle d-flex align-items-center justify-content-center">
+                  <BsChevronRight className="arrow-icon" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

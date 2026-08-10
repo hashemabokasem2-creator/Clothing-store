@@ -85,6 +85,59 @@
 
 @media (max-width: 767px) {
   .slide-content {
-  max-width: 100%;
+    max-width: 100%;
+  }
 }
+.category-card {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease !important;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #f82a52, #ff9f1c);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease !important;
+}
+
+.category-title {
+  color: #212529;
+  transition: color 0.3s ease;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: #fce8ee;
+  transition: all 0.3s ease !important;
+}
+
+.arrow-icon {
+  color: #e52e71 !important;
+  font-size: 16px;
+}
+
+.category-card:hover::before {
+  opacity: 1;
+}
+
+.category-card:hover {
+  border-color: transparent !important;
+}
+
+.category-card:hover .category-title {
+  color: #ffffff;
+}
+
+.category-card:hover .icon-box {
+  background-color: #ffffff;
 }
