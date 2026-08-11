@@ -5,6 +5,7 @@ import Swipercards from "./Swipercards.jsx";
 import Shopping from "./Shopping.jsx";
 import Backgroundgirl from "./backgroundgirl.jsx";
 import Filterproducts from "./filterproducts.jsx";
+import Videoimage from "./videoimage.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Shopping />
       <Backgroundgirl />
       <Filterproducts />
+      <Videoimage />
     </>
   );
 }
