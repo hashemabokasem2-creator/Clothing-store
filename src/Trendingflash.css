@@ -1,0 +1,29 @@
+.container-hero {
+  background: linear-gradient(to right, #f5f5f5 65%, #ef2853 65%);
+}
+
+.timer-circle {
+  width: 55px;
+  height: 55px;
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+.fs-8 {
+  font-size: 0.72rem;
+}
+
+.view-all-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #ffffff !important;
+  color: #e52e71 !important;
+  border-color: #ffffff !important;
+}

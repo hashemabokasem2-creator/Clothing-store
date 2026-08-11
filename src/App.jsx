@@ -7,6 +7,7 @@ import Backgroundgirl from "./backgroundgirl.jsx";
 import Filterproducts from "./filterproducts.jsx";
 import Videoimage from "./videoimage.jsx";
 import Producttwo from "./producttwo.jsx";
+import Trendingflash from "./Trendingflash.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Filterproducts />
       <Videoimage />
       <Producttwo />
+      <Trendingflash />
     </>
   );
 }

@@ -10,7 +10,7 @@ function Producttwo() {
     <>
       <section className="container mt-5">
         <div className="row mb-5">
-          <div className="col-md-4">
+          <div className="col-md-4 mt-3 mt-md-0">
             <div className="promo-card-one rounded-4 p-4 position-relative overflow-hidden d-flex justify-content-between align-items-center">
               <div className="promo-card-content position-relative z-1 d-flex flex-column align-items-start gap-2">
                 <span className="badge bg-white text-danger rounded-pill px-3 py-2 fw-semibold fs-7">
@@ -37,7 +37,7 @@ function Producttwo() {
               />
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mt-3 mt-md-0">
             <div className="promo-card-two rounded-4 p-4 position-relative overflow-hidden d-flex justify-content-between align-items-center">
               <div className="promo-card-content position-relative z-1 d-flex flex-column align-items-start gap-2">
                 <span className="badge bg-white text-danger rounded-pill px-3 py-2 fw-semibold fs-7">
@@ -64,7 +64,7 @@ function Producttwo() {
               />
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mt-3 mt-md-0">
             <div className="promo-card-three rounded-4 p-4 position-relative overflow-hidden d-flex justify-content-between align-items-center">
               <div className="promo-card-content position-relative z-1 d-flex flex-column align-items-start gap-2">
                 <span className="badge bg-white text-danger rounded-pill px-3 py-2 fw-semibold fs-7">
