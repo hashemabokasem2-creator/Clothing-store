@@ -8,6 +8,7 @@ import Filterproducts from "./filterproducts.jsx";
 import Videoimage from "./videoimage.jsx";
 import Producttwo from "./producttwo.jsx";
 import Trendingflash from "./Trendingflash.jsx";
+import Productreviews from "./Productreviews.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Videoimage />
       <Producttwo />
       <Trendingflash />
+      <Productreviews />
     </>
   );
 }

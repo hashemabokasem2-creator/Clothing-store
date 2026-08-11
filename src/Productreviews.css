@@ -1,0 +1,17 @@
+.tracking-wide {
+  letter-spacing: 4px;
+}
+
+.star-icon {
+  color: #ff9800 !important;
+}
+
+.author-avatar {
+  width: 52px;
+  height: 52px;
+}
+
+.quote-icon {
+  color: #f42c54;
+  transform: rotate(180deg);
+}
