@@ -4,6 +4,7 @@ import Navbartab from "./Navbartab.jsx";
 import Swipercards from "./Swipercards.jsx";
 import Shopping from "./Shopping.jsx";
 import Backgroundgirl from "./backgroundgirl.jsx";
+import Filterproducts from "./filterproducts.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Swipercards />
       <Shopping />
       <Backgroundgirl />
+      <Filterproducts />
     </>
   );
 }

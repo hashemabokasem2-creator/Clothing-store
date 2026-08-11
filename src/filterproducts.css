@@ -1,0 +1,60 @@
+.filter-subtitle {
+  color: #e52e71;
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+}
+
+.filter-title {
+  font-size: 2rem;
+}
+
+.filter-btn {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #e52e71 !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 575.98px) {
+  .filter-title {
+    font-size: 1.5rem;
+  }
+}
+
+.product-img-wrapper-two {
+  width: 85px;
+  height: 85px;
+}
+
+.product-img-two {
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img-two {
+  transform: scale(1.1);
+}
+
+.product-price {
+  color: #e52e71;
+  font-size: 1.1rem;
+}
+
+.product-title {
+  font-size: 0.95rem;
+}
+
+.product-category {
+  font-size: 0.725rem;
+  letter-spacing: 0.5px;
+}
+
+.star-icon {
+  color: #ff9e42;
+  font-size: 0.75rem;
+}
