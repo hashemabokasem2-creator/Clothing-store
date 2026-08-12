@@ -55,7 +55,7 @@ function Productreviews() {
               }}
             >
               <SwiperSlide>
-                <div className="card p-4 p-md-5 border-0 rounded-4 shadow position-relative">
+                <div className="card p-4 p-md-5 border-0 mb-5 rounded-4 shadow position-relative">
                   <div className="product-rating d-flex align-items-center gap-1 mb-3">
                     <BsStarFill className="star-icon fs-5 text-warning" />
                     <BsStarFill className="star-icon fs-5 text-warning" />

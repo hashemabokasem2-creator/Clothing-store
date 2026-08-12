@@ -9,6 +9,7 @@ import Videoimage from "./videoimage.jsx";
 import Producttwo from "./producttwo.jsx";
 import Trendingflash from "./Trendingflash.jsx";
 import Productreviews from "./Productreviews.jsx";
+import Formsignin from "./Formsignin.jsx";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Producttwo />
       <Trendingflash />
       <Productreviews />
+      <Formsignin />
     </>
   );
 }
