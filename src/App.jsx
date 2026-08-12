@@ -10,6 +10,7 @@ import Producttwo from "./producttwo.jsx";
 import Trendingflash from "./Trendingflash.jsx";
 import Productreviews from "./Productreviews.jsx";
 import Formsignin from "./Formsignin.jsx";
+import Latestnews from "./Latestnews.jsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Trendingflash />
       <Productreviews />
       <Formsignin />
+      <Latestnews />
     </>
   );
 }
