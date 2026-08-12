@@ -11,6 +11,7 @@ import Trendingflash from "./Trendingflash.jsx";
 import Productreviews from "./Productreviews.jsx";
 import Formsignin from "./Formsignin.jsx";
 import Latestnews from "./Latestnews.jsx";
+import Shapemorphslider from "./Shapemorphslider.jsx";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Productreviews />
       <Formsignin />
       <Latestnews />
+      <Shapemorphslider />
     </>
   );
 }
