@@ -1,0 +1,48 @@
+.footerr {
+  background-color: #030303;
+}
+
+.footer-link {
+  color: #a1a1a1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.3s ease !important;
+}
+
+.footer-link:hover {
+  color: #e52e71 !important;
+}
+
+.app-icon-btn,
+.social-icon-btn {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.app-icon-btn:hover,
+.social-icon-btn:hover {
+  background-color: #ffffff !important;
+  color: #e52e71 !important;
+  border-color: #ffffff !important;
+}
+
+.phone-number-link {
+  transition: color 0.3s ease;
+}
+
+.phone-number-link:hover {
+  color: #e52e71 !important;
+}
+
+.payment-badge {
+  background-color: #ffffff;
+  padding: 2px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

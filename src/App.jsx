@@ -12,6 +12,7 @@ import Productreviews from "./Productreviews.jsx";
 import Formsignin from "./Formsignin.jsx";
 import Latestnews from "./Latestnews.jsx";
 import Shapemorphslider from "./Shapemorphslider.jsx";
+import Footer from "./Footer.jsx";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Formsignin />
       <Latestnews />
       <Shapemorphslider />
+      <Footer />
     </>
   );
 }
