@@ -2,9 +2,9 @@ import React from "react";
 import "./Latestnews.css";
 import { Card } from "react-bootstrap";
 import { BsPerson, BsArrowUpRight } from "react-icons/bs";
-import blogImgone from "./assets/blog-1.jpg";
-import blogImgtwo from "./assets/blog-2.jpg";
-import blogImgthree from "./assets/blog-3.jpg";
+import blogImgone from "../assets/blog-1.jpg";
+import blogImgtwo from "../assets/blog-2.jpg";
+import blogImgthree from "../assets/blog-3.jpg";
 
 function Latestnews() {
   return (

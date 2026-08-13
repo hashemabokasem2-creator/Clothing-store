@@ -10,20 +10,20 @@ import {
   BsChevronDown,
   BsChevronRight,
 } from "react-icons/bs";
-import imageone from "./assets/banner-slide-1.jpg";
-import imagetwo from "./assets/banner-slide-2.jpg";
-import imagethree from "./assets/banner-slide-3.jpg";
-import imagefour from "./assets/banner-slide-4.jpg";
-import imagefive from "./assets/banner-slide-5.jpg";
-import imagesix from "./assets/banner-slide-6.jpg";
-import menImg from "./assets/category-1.jpg";
-import kidsImg from "./assets/category-2.jpg";
-import pantsImg from "./assets/category-3.jpg";
-import menImg2 from "./assets/category-4.jpg";
-import womenImg from "./assets/category-5.jpg";
-import jeansImg from "./assets/category-6.jpg";
-import sweaterImg from "./assets/category-7.jpg";
-import shoeImg from "./assets/category-8.jpg";
+import imageone from "../assets/banner-slide-1.jpg";
+import imagetwo from "../assets/banner-slide-2.jpg";
+import imagethree from "../assets/banner-slide-3.jpg";
+import imagefour from "../assets/banner-slide-4.jpg";
+import imagefive from "../assets/banner-slide-5.jpg";
+import imagesix from "../assets/banner-slide-6.jpg";
+import menImg from "../assets/category-1.jpg";
+import kidsImg from "../assets/category-2.jpg";
+import pantsImg from "../assets/category-3.jpg";
+import menImg2 from "../assets/category-4.jpg";
+import womenImg from "../assets/category-5.jpg";
+import jeansImg from "../assets/category-6.jpg";
+import sweaterImg from "../assets/category-7.jpg";
+import shoeImg from "../assets/category-8.jpg";
 
 function Swipercards() {
   return (

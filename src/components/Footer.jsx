@@ -17,7 +17,7 @@ import {
   FaSquare,
   FaCcAmazonPay,
 } from "react-icons/fa6";
-import logoo from "./assets/logo-white.svg";
+import logoo from "../assets/logo-white.svg";
 
 function Footer() {
   return (

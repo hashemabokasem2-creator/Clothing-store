@@ -1,35 +1,26 @@
 import React from "react";
-import Navmarquee from "./Navmarquee.jsx";
-import Navbartab from "./Navbartab.jsx";
-import Swipercards from "./Swipercards.jsx";
-import Shopping from "./Shopping.jsx";
-import Backgroundgirl from "./backgroundgirl.jsx";
-import Filterproducts from "./filterproducts.jsx";
-import Videoimage from "./videoimage.jsx";
-import Producttwo from "./producttwo.jsx";
-import Trendingflash from "./Trendingflash.jsx";
-import Productreviews from "./Productreviews.jsx";
-import Formsignin from "./Formsignin.jsx";
-import Latestnews from "./Latestnews.jsx";
-import Shapemorphslider from "./Shapemorphslider.jsx";
-import Footer from "./Footer.jsx";
+import { Routes, Route } from "react-router-dom";
+import Navmarquee from "./components/Navmarquee.jsx";
+import Navbartab from "./components/Navbartab.jsx";
+import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import Shop from "./pages/Shop.jsx";
+import Pages from "./pages/Pages.jsx";
 
 function App() {
   return (
     <>
       <Navmarquee />
       <Navbartab />
-      <Swipercards />
-      <Shopping />
-      <Backgroundgirl />
-      <Filterproducts />
-      <Videoimage />
-      <Producttwo />
-      <Trendingflash />
-      <Productreviews />
-      <Formsignin />
-      <Latestnews />
-      <Shapemorphslider />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/women" element={<Shop />} />
+        <Route path="/men" element={<Shop />} />
+        <Route path="/kids" element={<Shop />} />
+        <Route path="/blog" element={<Pages />} />
+        <Route path="/pages" element={<Home />} />
+      </Routes>
       <Footer />
     </>
   );

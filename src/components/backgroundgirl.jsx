@@ -1,7 +1,7 @@
 import React from "react";
 import "./backgroundgirl.css";
-import bgImage from "./assets/different-clothes.avif";
-import girlImage from "./assets/ad-img.png";
+import bgImage from "../assets/different-clothes.avif";
+import girlImage from "../assets/ad-img.png";
 import { BsCheck2, BsArrowUpRight } from "react-icons/bs";
 
 function Backgroundgirl() {

@@ -4,12 +4,12 @@ import { BsInstagram } from "react-icons/bs";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./Shapemorphslider.css";
-import imgone from "./assets/gallery-item-1.jpg";
-import imgtwo from "./assets/gallery-item-2.jpg";
-import imgthree from "./assets/gallery-item-3.jpg";
-import imgfour from "./assets/gallery-item-4.jpg";
-import imgfive from "./assets/gallery-item-5.jpg";
-import imgsix from "./assets/gallery-item-6.jpg";
+import imgone from "../assets/gallery-item-1.jpg";
+import imgtwo from "../assets/gallery-item-2.jpg";
+import imgthree from "../assets/gallery-item-3.jpg";
+import imgfour from "../assets/gallery-item-4.jpg";
+import imgfive from "../assets/gallery-item-5.jpg";
+import imgsix from "../assets/gallery-item-6.jpg";
 
 const images = [imgone, imgtwo, imgthree, imgfour, imgfive, imgsix];
 

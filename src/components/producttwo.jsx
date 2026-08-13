@@ -1,8 +1,8 @@
 import React from "react";
 import "./producttwo.css";
-import WomenImage from "./assets/sub-banner-1.png";
-import manImage from "./assets/sub-banner-2.png";
-import KidImage from "./assets/sub-banner-3.png";
+import WomenImage from "../assets/sub-banner-1.png";
+import manImage from "../assets/sub-banner-2.png";
+import KidImage from "../assets/sub-banner-3.png";
 import { BsArrowUpRight } from "react-icons/bs";
 
 function Producttwo() {

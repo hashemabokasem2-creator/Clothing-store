@@ -1,6 +1,6 @@
 import React from "react";
 import "./videoimage.css";
-import videoimg from "./assets/video-banner.jpg";
+import videoimg from "../assets/video-banner.jpg";
 import { BsPlayFill } from "react-icons/bs";
 
 function Videoimage() {

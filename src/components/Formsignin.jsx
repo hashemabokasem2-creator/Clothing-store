@@ -1,6 +1,6 @@
 import React from "react";
 import "./Formsignin.css";
-import peopleImg from "./assets/images.jpg";
+import peopleImg from "../assets/images.jpg";
 import { BsSend, BsArrowUpRight } from "react-icons/bs";
 
 function Formsignin() {

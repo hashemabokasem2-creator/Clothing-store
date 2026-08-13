@@ -5,11 +5,11 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { BsStarFill, BsStar, BsQuote } from "react-icons/bs";
-import manimgone from "./assets/review-author-1.png";
-import manimgtwo from "./assets/review-author-2.png";
-import manimgthre from "./assets/review-author-3.png";
-import manimgfou from "./assets/review-author-4.png";
-import manimgfiv from "./assets/category-1.jpg";
+import manimgone from "../assets/review-author-1.png";
+import manimgtwo from "../assets/review-author-2.png";
+import manimgthre from "../assets/review-author-3.png";
+import manimgfou from "../assets/review-author-4.png";
+import manimgfiv from "../assets/category-1.jpg";
 
 function Productreviews() {
   return (

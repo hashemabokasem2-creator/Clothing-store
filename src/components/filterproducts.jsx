@@ -2,18 +2,18 @@ import react, { useState } from "react";
 import "./filterproducts.css";
 import { BsStarFill } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
-import imageone from "./assets/product-img-sm-1.jpg";
-import imagetwo from "./assets/product-img-sm-2.jpg";
-import imagethree from "./assets/product-img-sm-3.jpg";
-import imagefour from "./assets/product-img-sm-4.jpg";
-import imagefive from "./assets/product-img-sm-5.jpg";
-import imagesix from "./assets/product-img-sm-6.jpg";
-import imageseven from "./assets/product-img-sm-7.jpg";
-import imageeight from "./assets/product-img-sm-8.jpg";
-import imagenine from "./assets/product-img-sm-9.jpg";
-import imageten from "./assets/product-img-sm-10.jpg";
-import imageeleven from "./assets/product-img-sm-11.jpg";
-import imagetwelve from "./assets/product-img-sm-12.jpg";
+import imageone from "../assets/product-img-sm-1.jpg";
+import imagetwo from "../assets/product-img-sm-2.jpg";
+import imagethree from "../assets/product-img-sm-3.jpg";
+import imagefour from "../assets/product-img-sm-4.jpg";
+import imagefive from "../assets/product-img-sm-5.jpg";
+import imagesix from "../assets/product-img-sm-6.jpg";
+import imageseven from "../assets/product-img-sm-7.jpg";
+import imageeight from "../assets/product-img-sm-8.jpg";
+import imagenine from "../assets/product-img-sm-9.jpg";
+import imageten from "../assets/product-img-sm-10.jpg";
+import imageeleven from "../assets/product-img-sm-11.jpg";
+import imagetwelve from "../assets/product-img-sm-12.jpg";
 
 function Filterproducts() {
   const [activeTab, setActiveTab] = useState("All Products");
@@ -214,7 +214,7 @@ function Filterproducts() {
                           <BsStarFill className="star-icon" />
                           <BsStarFill className="star-icon" />
                         </div>
-                      </div>
+                      </div>.
                     </div>
                   </div>
                 </motion.div>

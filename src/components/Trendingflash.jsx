@@ -5,12 +5,12 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { BsArrowUpRight, BsBag, BsEye, BsHeart } from "react-icons/bs";
-import imageone from "./assets/product-img-1.jpg";
-import imagetwo from "./assets/product-img-2.jpg";
-import imagethree from "./assets/product-img-3.jpg";
-import imagefour from "./assets/product-img-sm-2.jpg";
-import imagefive from "./assets/product-img-4.jpg";
-import imagesix from "./assets/product-img-5.jpg";
+import imageone from "../assets/product-img-1.jpg";
+import imagetwo from "../assets/product-img-2.jpg";
+import imagethree from "../assets/product-img-3.jpg";
+import imagefour from "../assets/product-img-sm-2.jpg";
+import imagefive from "../assets/product-img-4.jpg";
+import imagesix from "../assets/product-img-5.jpg";
 
 function Trendingflash() {
   return (

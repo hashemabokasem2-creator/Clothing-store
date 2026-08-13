@@ -27,9 +27,9 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
-import imageone from "./assets/logo.svg";
-import imagetwo from "./assets/product-img-2.jpg";
-import imagethree from "./assets/product-img-1.jpg";
+import imageone from "../assets/logo.svg";
+import imagetwo from "../assets/product-img-2.jpg";
+import imagethree from "../assets/product-img-1.jpg";
 
 function Navbartab() {
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Shopping.css";
 import { BsArrowUpRight, BsBag, BsEye, BsHeart } from "react-icons/bs";
-import bannerImg from "./assets/products-sub-banner-1.jpg";
-import imageone from "./assets/product-img-1.jpg";
-import imagetwo from "./assets/product-img-2.jpg";
-import imagethree from "./assets/product-img-3.jpg";
-import bannerimgtw from "./assets/products-sub-banner-2.jpg";
+import bannerImg from "../assets/products-sub-banner-1.jpg";
+import imageone from "../assets/product-img-1.jpg";
+import imagetwo from "../assets/product-img-2.jpg";
+import imagethree from "../assets/product-img-3.jpg";
+import bannerimgtw from "../assets/products-sub-banner-2.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
