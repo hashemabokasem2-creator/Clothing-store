@@ -157,3 +157,53 @@
 .offcanvasborder {
   border-left: 3px solid #e52e71 !important;
 }
+
+/* /////// */
+
+.mega-menu-wrapper {
+  position: relative;
+}
+
+.mega-menu-dropdown {
+  top: 100%;
+  left: 50%;
+  right: auto;
+  width: 1200px;
+  z-index: 1050;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-90%, 15px);
+  transition: all 0.3s ease !important;
+  pointer-events: none;
+}
+
+.mega-menu-wrapper:hover .mega-menu-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-90%, 0);
+  pointer-events: auto;
+}
+
+.mega-menu-title {
+  color: #e52e71;
+  font-size: 0.82rem;
+  letter-spacing: 0.5px;
+}
+
+.mega-menu-col {
+  border-right: 1px solid #eeeeee;
+}
+
+.mega-menu-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+
+.mega-menu-link:hover {
+  color: #e52e71 !important;
+}

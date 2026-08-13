@@ -154,9 +154,101 @@ function Navbartab() {
             <Nav.Link as={NavLink} to="/blog" className="nav-link-custom px-2">
               BLOG
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/pages" className="nav-link-custom px-2">
+            {/* <Nav.Link as={NavLink} to="/pages" className="nav-link-custom px-2">
               PAGES
-            </Nav.Link>
+            </Nav.Link> */}
+            <div className="mega-menu-wrapper position-relative">
+  <Nav.Link as={NavLink} to="/pages" className="nav-link-custom px-2 py-3">
+    PAGES
+  </Nav.Link>
+
+  {/* Mega Menu Dropdown */}
+  <div className="mega-menu-dropdown p-4 bg-white rounded-4 shadow-lg position-absolute">
+    <div className="row g-0">
+      {/* Column 1: INNER PAGES */}
+      <div className="col mega-menu-col text-start px-3">
+        <h6 className="mega-menu-title fw-bold mb-3">INNER PAGES</h6>
+        <ul className="list-unstyled d-flex flex-column gap-2 m-0 p-0">
+          <li><a href="#" className="mega-menu-link">ABOUT</a></li>
+          <li><a href="#" className="mega-menu-link">BLOGS</a></li>
+          <li><a href="#" className="mega-menu-link">BLOGS LAYOUT 2</a></li>
+          <li><a href="#" className="mega-menu-link">BLOG DETAILS</a></li>
+          <li><a href="#" className="mega-menu-link">CONTACT</a></li>
+          <li><a href="#" className="mega-menu-link">FAQ</a></li>
+          <li><a href="#" className="mega-menu-link">OUR STORE</a></li>
+          <li><a href="#" className="mega-menu-link">REVIEWS</a></li>
+          <li><a href="#" className="mega-menu-link">LOG IN</a></li>
+          <li><a href="#" className="mega-menu-link">SIGN UP</a></li>
+        </ul>
+      </div>
+
+      {/* Column 2: SHOP PAGES */}
+      <div className="col mega-menu-col text-start px-3">
+        <h6 className="mega-menu-title fw-bold mb-3">SHOP PAGES</h6>
+        <ul className="list-unstyled d-flex flex-column gap-2 m-0 p-0">
+          <li><a href="#" className="mega-menu-link">SHOP LEFT SIDEBAR</a></li>
+          <li><a href="#" className="mega-menu-link">SHOP RIGHT SIDEBAR</a></li>
+          <li><a href="#" className="mega-menu-link">SHOP FULL WIDTH</a></li>
+          <li><a href="#" className="mega-menu-link">SHOP DETAILS</a></li>
+          <li><a href="#" className="mega-menu-link">WISHLIST</a></li>
+          <li><a href="#" className="mega-menu-link">CART</a></li>
+          <li><a href="#" className="mega-menu-link">CHECKOUT</a></li>
+        </ul>
+      </div>
+
+      {/* Column 3: MEN'S */}
+      <div className="col mega-menu-col text-start px-3">
+        <h6 className="mega-menu-title fw-bold mb-3">MEN'S</h6>
+        <ul className="list-unstyled d-flex flex-column gap-2 m-0 p-0">
+          <li><a href="#" className="mega-menu-link">CLOTHING</a></li>
+          <li><a href="#" className="mega-menu-link">FOOTWEAR</a></li>
+          <li><a href="#" className="mega-menu-link">ACCESSORIES</a></li>
+          <li><a href="#" className="mega-menu-link">ACTIVEWEAR</a></li>
+          <li><a href="#" className="mega-menu-link">GROOMING</a></li>
+          <li><a href="#" className="mega-menu-link">ETHNIC WEAR</a></li>
+        </ul>
+      </div>
+
+      {/* Column 4: WOMEN'S */}
+      <div className="col mega-menu-col text-start px-3">
+        <h6 className="mega-menu-title fw-bold mb-3">WOMEN'S</h6>
+        <ul className="list-unstyled d-flex flex-column gap-2 m-0 p-0">
+          <li><a href="#" className="mega-menu-link">CLOTHING</a></li>
+          <li><a href="#" className="mega-menu-link">FOOTWEAR</a></li>
+          <li><a href="#" className="mega-menu-link">BAGS & ACCESSORIES</a></li>
+          <li><a href="#" className="mega-menu-link">ACTIVEWEAR</a></li>
+          <li><a href="#" className="mega-menu-link">BEAUTY & GROOMING</a></li>
+          <li><a href="#" className="mega-menu-link">ETHNIC WEAR</a></li>
+        </ul>
+      </div>
+
+      {/* Column 5: CHILDREN'S */}
+      <div className="col mega-menu-col text-start px-3">
+        <h6 className="mega-menu-title fw-bold mb-3">CHILDREN'S</h6>
+        <ul className="list-unstyled d-flex flex-column gap-2 m-0 p-0">
+          <li><a href="#" className="mega-menu-link">CLOTHING</a></li>
+          <li><a href="#" className="mega-menu-link">FOOTWEAR</a></li>
+          <li><a href="#" className="mega-menu-link">ACCESSORIES</a></li>
+          <li><a href="#" className="mega-menu-link">TOYS & GAMES</a></li>
+          <li><a href="#" className="mega-menu-link">BABY ESSENTIALS</a></li>
+        </ul>
+      </div>
+
+      {/* Column 6: JEWELLERY */}
+      <div className="col mega-menu-col text-start px-3 border-0">
+        <h6 className="mega-menu-title fw-bold mb-3">JEWELLERY</h6>
+        <ul className="list-unstyled d-flex flex-column gap-2 m-0 p-0">
+          <li><a href="#" className="mega-menu-link">ETHNIC & TRADITIONAL JEWELLERY</a></li>
+          <li><a href="#" className="mega-menu-link">BRIDAL JEWELLERY</a></li>
+          <li><a href="#" className="mega-menu-link">BRACELETS</a></li>
+          <li><a href="#" className="mega-menu-link">RINGS</a></li>
+          <li><a href="#" className="mega-menu-link">EARRINGS</a></li>
+          <li><a href="#" className="mega-menu-link">CHAINS & PENDANTS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
           </Nav>
 
           <div className="d-flex align-items-center gap-4 text-dark fs-5">
