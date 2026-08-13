@@ -1,9 +1,10 @@
 import React from "react";
+import Sidebar from "../components/Sidebar.jsx";
 
 function Shop (){
     return (
         <>
-        <h1>Hello</h1>
+        <Sidebar />
         </>
     );
 }
