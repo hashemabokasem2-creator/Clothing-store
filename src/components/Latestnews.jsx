@@ -69,7 +69,7 @@ function Latestnews() {
             </Card>
           </div>
           <div className="col-md-4 mt-3">
-              <Card className="border-0 bg-transparent h-100">
+            <Card className="border-0 bg-transparent h-100">
               <div className="position-relative overflow-hidden rounded-4">
                 <Card.Img
                   variant="top"
@@ -109,7 +109,7 @@ function Latestnews() {
             </Card>
           </div>
           <div className="col-md-4 mt-3">
-              <Card className="border-0 bg-transparent h-100">
+            <Card className="border-0 bg-transparent h-100">
               <div className="position-relative overflow-hidden rounded-4">
                 <Card.Img
                   variant="top"

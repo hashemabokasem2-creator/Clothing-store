@@ -139,26 +139,24 @@
   color: #ffffff;
 }
 
-.social-icon-btn {
+.social-icon-btn-one {
   width: 40px;
   height: 40px;
-  background-color: transparent;
+  background-color: transparent !important;
   border: 1px solid #7e7979 !important;
-  color: #000000;
-  transition: all 0.3s ease;
+  color: #000000 !important;
+  transition: all 0.3s ease !important;
 }
 
-.social-icon-btn:hover {
-  background-color: #e52e71;
+.social-icon-btn-one:hover {
+  background-color: #e52e71 !important;
   border: 1px solid #e52e71 !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .offcanvasborder {
   border-left: 3px solid #e52e71 !important;
 }
-
-/* /////// */
 
 .mega-menu-wrapper {
   position: relative;

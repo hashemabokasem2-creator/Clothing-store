@@ -673,25 +673,25 @@ function Navbartab() {
             <div className="d-flex align-items-center gap-2">
               <a
                 href="#"
-                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+                className="social-icon-btn-one d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
               >
                 <BsFacebook size={16} />
               </a>
               <a
                 href="#"
-                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+                className="social-icon-btn-one d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
               >
                 <BsTwitterX size={16} />
               </a>
               <a
                 href="#"
-                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+                className="social-icon-btn-one d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
               >
                 <BsInstagram size={16} />
               </a>
               <a
                 href="#"
-                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+                className="social-icon-btn-one d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
               >
                 <BsYoutube size={16} />
               </a>
@@ -786,25 +786,25 @@ function Navbartab() {
             <div className="d-flex align-items-center gap-2">
               <a
                 href="#"
-                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+                className="social-icon-btn-one d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
               >
                 <BsFacebook size={16} />
               </a>
               <a
                 href="#"
-                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+                className="social-icon-btn-one d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
               >
                 <BsTwitterX size={16} />
               </a>
               <a
                 href="#"
-                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+                className="social-icon-btn-one d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
               >
                 <BsInstagram size={16} />
               </a>
               <a
                 href="#"
-                className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+                className="social-icon-btn-one d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
               >
                 <BsYoutube size={16} />
               </a>

@@ -517,8 +517,8 @@ function Shopping() {
                     disableOnInteraction: false,
                   }}
                   navigation={{
-                    nextEl: ".prod-next-btn",
-                    prevEl: ".prod-prev-btn",
+                    nextEl: ".prod-next-btn-tw",
+                    prevEl: ".prod-prev-btn-tw",
                   }}
                   breakpoints={{
                     0: {
@@ -662,13 +662,13 @@ function Shopping() {
                   <div className="custom-swiper-nav bg-white rounded-pill d-inline-flex align-items-center gap-3 px-3 py-2 border shadow-sm">
                     <button
                       type="button"
-                      className="nav-btn prod-next-btn btn border-0 p-0 text-dark"
+                      className="nav-btn prod-next-btn-tw btn border-0 p-0 text-dark"
                     >
                       <BsChevronLeft strokeWidth={1} />
                     </button>
                     <button
                       type="button"
-                      className="nav-btn prod-prev-btn btn border-0 p-0 text-dark"
+                      className="nav-btn prod-prev-btn-tw btn border-0 p-0 text-dark"
                     >
                       <BsChevronRight strokeWidth={1} />
                     </button>
